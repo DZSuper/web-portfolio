@@ -1,6 +1,6 @@
 "use client";
-import storage from "@/utils/firebase";
-import { getDownloadURL, ref } from "firebase/storage";
+import SkeletonLoading from "@/components/skeletonLoading";
+import { retrieveStorage } from "@/utils/retrieveStorage";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -12,27 +12,19 @@ export default function HamburgerMenu({ onSlider }) {
   };
 
   useEffect(() => {
-    getDownloadURL(ref(storage, "menu.svg"))
-      .then((url) => {
-        fetch(url)
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error("Network response was not ok");
-            }
-            return response.blob();
-          })
-          .then((blob) => setMenu(URL.createObjectURL(blob)))
-          .catch((error) => {
-            console.error("Fetch Error:", error);
-          });
-      })
-      .catch((error) => {
-        console.error("Firebase Storage Error:", error);
-      });
+    async function fetchData() {
+      try {
+        const response = await retrieveStorage("menu.svg");
+        setMenu(response);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchData();
   }, []);
 
   if (!menu) {
-    return <span>...</span>;
+    return <SkeletonLoading size="7" />;
   }
 
   return (
