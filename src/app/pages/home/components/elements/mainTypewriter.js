@@ -16,7 +16,7 @@ export default function MainTypewriter() {
     fetchData();
   }, []);
 
-  if (!typewriterContent) {
+  if (!typewriterContent || typewriterContent.length === 0) {
     return <SkeletonLoading size="64" />;
   }
 
