@@ -17,7 +17,7 @@ export default function SkillImageLogo({ value, data }) {
       ) : (
         <div className="animate-pulse h-14 w-14 bg-slate-600 rounded-md"></div>
       )}
-      <p className="text-xs">{value}</p>
+      <p className="text-xs text-slate-500 font-semibold">{value}</p>
     </div>
   );
 }
