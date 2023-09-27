@@ -3,7 +3,7 @@ import Title from "../elements/title";
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Title value="My Portfolio" />
       <PortfolioCard />
     </div>
