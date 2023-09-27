@@ -17,7 +17,7 @@ export default function MainTypewriter() {
 
   if (!typewriterContent || typewriterContent.length === 0) {
     return (
-      <div className="animate-pulse h-6 w-52 bg-slate-600 rounded-md"></div>
+      <div className="m-auto md:m-0 animate-pulse h-6 w-52 bg-slate-600 rounded-md"></div>
     );
   }
 
