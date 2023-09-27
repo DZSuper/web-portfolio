@@ -17,8 +17,17 @@ export default function MainTypewriter() {
   }, []);
 
   if (!typewriterContent || typewriterContent.length === 0) {
-    return <SkeletonLoading size="64" />;
+    return <SkeletonLoading size="4" />;
   }
 
-  return <Typewriter words={typewriterContent} loop={0} cursor />;
+  return (
+    <div className="text-2xl font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <Typewriter
+        words={typewriterContent}
+        loop={0}
+        cursor
+        cursorColor="purple"
+      />
+    </div>
+  );
 }

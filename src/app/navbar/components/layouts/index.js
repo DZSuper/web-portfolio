@@ -12,7 +12,7 @@ export default function Layouts() {
   const displayNav = slider ? "right-0 flex" : "-right-1/2 hidden";
 
   return (
-    <div className="flex justify-between items-center px-8 py-2 bg-slate-900 shadow-md shadow-indigo-500/50 md:px-10 lg:px-16">
+    <div className="fixed w-screen flex justify-between items-center px-8 py-2 bg-slate-900 shadow-md shadow-indigo-500/50 md:px-10 lg:px-16">
       <Title />
       <NavbarList slider={displayNav} />
       <HamburgerMenu onSlider={handleSlider} />

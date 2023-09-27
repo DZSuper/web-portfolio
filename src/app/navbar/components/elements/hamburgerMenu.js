@@ -23,18 +23,20 @@ export default function HamburgerMenu({ onSlider }) {
     fetchData();
   }, []);
 
-  if (!menu) {
-    return <SkeletonLoading size="7" />;
-  }
-
   return (
-    <Image
-      className="cursor-pointer md:hidden"
-      onClick={handleSlider}
-      src={menu}
-      width={30}
-      height={30}
-      alt="menu"
-    />
+    <>
+      {menu ? (
+        <Image
+          className="cursor-pointer z-20 md:hidden"
+          onClick={handleSlider}
+          src={menu}
+          width={30}
+          height={30}
+          alt="menu"
+        />
+      ) : (
+        <SkeletonLoading size="7" />
+      )}
+    </>
   );
 }

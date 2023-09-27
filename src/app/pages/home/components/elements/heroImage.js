@@ -19,9 +19,13 @@ export default function HeroImage() {
     fetchData();
   }, []);
 
-  if (!heroImage) {
-    return <SkeletonLoading size="64" />;
-  }
-
-  return <Image src={heroImage} width={275} height={275} alt="Hero Image" />;
+  return (
+    <div className="md:order-1">
+      {heroImage ? (
+        <Image src={heroImage} width={275} height={275} alt="Hero Image" />
+      ) : (
+        <SkeletonLoading size="64" />
+      )}
+    </div>
+  );
 }
