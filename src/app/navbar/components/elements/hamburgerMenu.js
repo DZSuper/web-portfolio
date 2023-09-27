@@ -1,35 +1,22 @@
 "use client";
 import SkeletonLoading from "@/components/skeletonLoading";
-import { retrieveStorage } from "@/utils/retrieveStorage";
+import { getStorage } from "@/utils/getStorage";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export default function HamburgerMenu({ onSlider }) {
-  const [menu, setMenu] = useState();
+  const data = getStorage("menu.svg");
 
   const handleSlider = () => {
     onSlider();
   };
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await retrieveStorage("menu.svg");
-        setMenu(response);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    fetchData();
-  }, []);
-
   return (
     <>
-      {menu ? (
+      {data ? (
         <Image
           className="cursor-pointer z-20 md:hidden"
           onClick={handleSlider}
-          src={menu}
+          src={data}
           width={30}
           height={30}
           alt="menu"
