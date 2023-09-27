@@ -1,5 +1,5 @@
-import AbuotContent from "../elements/aboutContent";
-import AboutImage from "../elements/aboutImage";
+import AbuotContent from "../elements/about/aboutContent";
+import AboutImage from "../elements/about/aboutImage";
 import Title from "../elements/title";
 
 export default function About() {

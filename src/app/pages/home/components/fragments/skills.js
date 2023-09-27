@@ -1,4 +1,4 @@
-import SkillsContent from "../elements/skillsContent";
+import SkillsContent from "../elements/skills/skillsContent";
 import Title from "../elements/title";
 
 export default function Skills() {

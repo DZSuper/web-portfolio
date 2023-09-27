@@ -1,4 +1,4 @@
-import ExperienceContent from "../elements/experienceContent";
+import ExperienceContent from "../elements/experience/experienceContent";
 import Title from "../elements/title";
 
 export default function Experience() {

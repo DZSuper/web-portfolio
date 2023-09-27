@@ -10,7 +10,7 @@ export default async function ExperienceContent() {
       {data.map((doc) => (
         <div
           key={doc.id}
-          className="max-w-md p-6 border border-gray-700 rounded-lg shadow mx-6"
+          className="max-w-md p-6 border bg-gray-800 border-gray-700 rounded-lg shadow mx-6"
         >
           <ExperienceTime value={doc.time} />
           <ExperienceDescription value={doc.description} />

@@ -2,7 +2,7 @@
 import { getStorage } from "@/utils/getStorage";
 import Image from "next/image";
 
-export default function HeroImage() {
+export default function MainImage() {
   const data = getStorage("hero.png");
 
   return (

@@ -8,8 +8,8 @@ export default function MainTypewriter() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const typewriterContents = await retrieveData("typewriter");
-      const contentArray = typewriterContents.map((doc) => doc.typewriter);
+      const data = await retrieveData("typewriter");
+      const contentArray = data.map((doc) => doc.typewriter);
       setTypewriterContent(contentArray);
     };
     fetchData();
