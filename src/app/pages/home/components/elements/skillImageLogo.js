@@ -1,4 +1,3 @@
-import SkeletonLoading from "@/components/skeletonLoading";
 import Image from "next/image";
 
 export default function SkillImageLogo({ value, data }) {
@@ -16,7 +15,7 @@ export default function SkillImageLogo({ value, data }) {
           alt={value}
         />
       ) : (
-        <SkeletonLoading size="14" />
+        <div className="animate-pulse h-14 w-14 bg-slate-600 rounded-md"></div>
       )}
       <p className="text-xs">{value}</p>
     </div>

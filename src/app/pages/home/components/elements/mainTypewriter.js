@@ -1,5 +1,4 @@
 "use client";
-import SkeletonLoading from "@/components/skeletonLoading";
 import { retrieveData } from "@/utils/retrieveData";
 import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
@@ -17,7 +16,9 @@ export default function MainTypewriter() {
   }, []);
 
   if (!typewriterContent || typewriterContent.length === 0) {
-    return <SkeletonLoading size="4" />;
+    return (
+      <div className="animate-pulse h-6 w-52 bg-slate-600 rounded-md"></div>
+    );
   }
 
   return (

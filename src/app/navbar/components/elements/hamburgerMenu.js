@@ -1,5 +1,4 @@
 "use client";
-import SkeletonLoading from "@/components/skeletonLoading";
 import { getStorage } from "@/utils/getStorage";
 import Image from "next/image";
 
@@ -22,7 +21,7 @@ export default function HamburgerMenu({ onSlider }) {
           alt="menu"
         />
       ) : (
-        <SkeletonLoading size="7" />
+        <div className="animate-pulse h-7 w-7 bg-slate-600 rounded-md"></div>
       )}
     </>
   );

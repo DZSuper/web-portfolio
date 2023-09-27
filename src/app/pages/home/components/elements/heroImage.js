@@ -1,5 +1,4 @@
 "use client";
-import SkeletonLoading from "@/components/skeletonLoading";
 import { getStorage } from "@/utils/getStorage";
 import Image from "next/image";
 
@@ -11,7 +10,7 @@ export default function HeroImage() {
       {data ? (
         <Image src={data} width={275} height={275} alt="Hero Image" />
       ) : (
-        <SkeletonLoading size="64" />
+        <div className="animate-pulse h-64 w-64 bg-slate-600 rounded-md"></div>
       )}
     </div>
   );

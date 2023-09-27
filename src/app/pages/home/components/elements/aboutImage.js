@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import SkeletonLoading from "@/components/skeletonLoading";
 import { getStorage } from "@/utils/getStorage";
 
 export default function AboutImage() {
@@ -17,7 +16,7 @@ export default function AboutImage() {
           alt="About Image"
         />
       ) : (
-        <SkeletonLoading size="60" />
+        <div className="animate-pulse h-60 w-60 bg-slate-600 rounded-md"></div>
       )}
     </div>
   );
