@@ -1,15 +1,19 @@
+"use client";
+import { getStorage } from "@/utils/getStorage";
 import Image from "next/image";
 
-export default function SkillImageLogo({ value, data }) {
+export default function SkillImageLogo({ value }) {
+  const dataImage = getStorage(`/logo/${value.toLowerCase()}.svg`);
+
   return (
     <div
       className="flex flex-col justify-between items-center gap-4"
       title={value}
     >
-      {data ? (
+      {dataImage ? (
         <Image
           className="w-auto"
-          src={data}
+          src={dataImage}
           width={60}
           height={60}
           alt={value}
