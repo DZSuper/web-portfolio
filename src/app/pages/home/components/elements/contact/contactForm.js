@@ -26,7 +26,7 @@ export default function ContactForm() {
         type="email"
         state={state.errors}
       />
-      <ContactFormTextarea value="message" state={state.errors} />
+      <ContactFormTextarea value="Message" state={state.errors} />
       <ContactFormButton state={state.submitting} />
     </form>
   );
