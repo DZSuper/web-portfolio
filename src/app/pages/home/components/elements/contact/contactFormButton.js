@@ -1,6 +1,10 @@
-export default function ContactFormButton() {
+export default function ContactFormButton({ state }) {
   return (
-    <button className="bg-blue-600 rounded-lg p-2 w-full text-lg font-medium transition hover:bg-blue-700">
+    <button
+      type="submit"
+      disabled={state}
+      className="bg-blue-600 rounded-lg p-2 w-full text-lg font-medium transition hover:bg-blue-700"
+    >
       SEND MESSAGE
     </button>
   );

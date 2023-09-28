@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "encoding": "^0.1.13",
     "firebase": "^10.4.0",
     "next": "latest",
