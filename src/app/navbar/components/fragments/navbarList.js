@@ -5,7 +5,14 @@ import ListItem from "../elements/listItem";
 export default function NavbarList({ slider }) {
   return (
     <ScrollspyNav
-      scrollTargetIds={["home", "about", "skill", "experience", "contact"]}
+      scrollTargetIds={[
+        "home",
+        "about",
+        "skill",
+        "experience",
+        "portfolio",
+        "contact",
+      ]}
       offset={0}
       activeNavClass="text-slate-300"
       scrollDuration="500"
@@ -18,7 +25,7 @@ export default function NavbarList({ slider }) {
         <ListItem href={"#about"} value={"About"} />
         <ListItem href={"#skill"} value={"Skill"} />
         <ListItem href={"#experience"} value={"Experience"} />
-        <ListItem href={"/portfolio"} value={"Portfolio"} />
+        <ListItem href={"#portfolio"} value={"Portfolio"} />
         <ListItem href={"#contact"} value={"Contact"} />
       </ul>
     </ScrollspyNav>
