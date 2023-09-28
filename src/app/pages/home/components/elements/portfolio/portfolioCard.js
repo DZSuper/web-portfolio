@@ -15,7 +15,7 @@ export default async function PortfolioCard() {
           <PortfolioCardImage
             href={doc.link}
             src={doc.image}
-            value={doc.image}
+            value={doc.title}
           />
           <PortfolioCardDesc
             href={doc.link}
