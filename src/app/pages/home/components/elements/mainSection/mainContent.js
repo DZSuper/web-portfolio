@@ -1,6 +1,6 @@
 import { retrieveData } from "@/utils/retrieveData";
 import MainTypewriter from "./mainTypewriter";
-import MainCta from "./MainCta";
+import MainCta from "./mainCta";
 
 export default async function MainContent() {
   const data = await retrieveData("main_content");
