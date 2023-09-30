@@ -3,7 +3,7 @@ import { getStorage } from "@/utils/getStorage";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ImageCard({ src, href, value }) {
+export default function PortfolioImageCard({ src, href, value }) {
   const image = getStorage(`/portfolio/${src}`);
 
   return (

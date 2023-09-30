@@ -1,6 +1,6 @@
 "use client";
 import ScrollspyNav from "react-scrollspy-nav";
-import ListItem from "../elements/listItem";
+import NavbarListItem from "../elements/navbarListItem";
 
 export default function NavbarList({ slider }) {
   return (
@@ -21,12 +21,12 @@ export default function NavbarList({ slider }) {
       <ul
         className={`absolute bg-slate-800 h-screen w-1/2 top-0 bottom-0 flex-col items-center justify-evenly z-10 ${slider} md:flex md:static md:flex-row md:w-auto md:h-auto md:bg-transparent md:gap-6`}
       >
-        <ListItem href={"#home"} value={"Home"} />
-        <ListItem href={"#about"} value={"About"} />
-        <ListItem href={"#skill"} value={"Skill"} />
-        <ListItem href={"#experience"} value={"Experience"} />
-        <ListItem href={"#portfolio"} value={"Portfolio"} />
-        <ListItem href={"#contact"} value={"Contact"} />
+        <NavbarListItem href={"#home"} value={"Home"} />
+        <NavbarListItem href={"#about"} value={"About"} />
+        <NavbarListItem href={"#skill"} value={"Skill"} />
+        <NavbarListItem href={"#experience"} value={"Experience"} />
+        <NavbarListItem href={"#portfolio"} value={"Portfolio"} />
+        <NavbarListItem href={"#contact"} value={"Contact"} />
       </ul>
     </ScrollspyNav>
   );

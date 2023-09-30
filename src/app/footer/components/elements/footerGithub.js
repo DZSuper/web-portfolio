@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Github() {
+export default function FooterGithub() {
   return (
     <Link
       href="https://github.com/rizfanradya"

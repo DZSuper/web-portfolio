@@ -1,11 +1,11 @@
-import Card from "../fragments/card";
-import Nav from "../fragments/nav";
+import PortfolioCard from "../fragments/portfolioCard";
+import PortfolioNav from "../fragments/portfolioNav";
 
 export default function Layouts() {
   return (
     <>
-      <Nav />
-      <Card />
+      <PortfolioNav />
+      <PortfolioCard />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { retrieveData } from "@/utils/retrieveData";
 
-export default async function AbuotContent() {
+export default async function AboutContent() {
   const data = await retrieveData("about_content");
 
   return (

@@ -1,7 +1,7 @@
-import MainContent from "../elements/main/mainContent";
-import MainImage from "../elements/main/mainImage";
+import MainContent from "../elements/mainSection/mainContent";
+import MainImage from "../elements/mainSection/mainImage";
 
-export default function Main() {
+export default function MainSection() {
   return (
     <div
       id="home"

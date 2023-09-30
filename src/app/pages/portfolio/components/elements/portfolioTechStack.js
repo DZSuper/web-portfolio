@@ -1,4 +1,4 @@
-export default function Tech({ tech }) {
+export default function PortfolioTechStack({ tech }) {
   return (
     <>
       {tech ? (

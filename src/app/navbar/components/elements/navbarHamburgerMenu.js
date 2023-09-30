@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-export default function HamburgerMenu({ onSlider }) {
+export default function NavbarHamburgerMenu({ onSlider }) {
   const handleSlider = () => {
     onSlider();
   };

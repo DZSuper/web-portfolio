@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Title({ href, title }) {
+export default function PortfolioTitle({ href, title }) {
   return (
     <>
       {title ? (

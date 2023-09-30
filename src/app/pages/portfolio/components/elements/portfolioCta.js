@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Cta({ href, sourceCode }) {
+export default function PortfolioCta({ href, sourceCode }) {
   return (
     <div className="flex justify-between items-center">
       <Link

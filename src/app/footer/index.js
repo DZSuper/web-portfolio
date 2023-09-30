@@ -1,5 +1,5 @@
-import Layouts from "./components/layouts";
+import FooterLayouts from "./components/layouts";
 
 export default function Footer() {
-  return <Layouts />;
+  return <FooterLayouts />;
 }

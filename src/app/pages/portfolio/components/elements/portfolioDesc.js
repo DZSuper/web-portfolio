@@ -1,4 +1,4 @@
-export default function Desc({ desc }) {
+export default function PortfolioDesc({ desc }) {
   return (
     <>
       {desc ? (

@@ -1,21 +1,21 @@
-import Main from "../fragments/main";
-import About from "../fragments/about";
-import Skills from "../fragments/skills";
-import Experience from "../fragments/experience";
-import Portfolio from "../fragments/portfolio";
-import Contact from "../fragments/contact";
 import Navbar from "@/app/navbar";
+import MainSection from "../fragments/mainSection";
+import AboutSection from "../fragments/aboutSection";
+import SkillsSection from "../fragments/skillsSection";
+import ExperienceSection from "../fragments/experienceSection";
+import PortfolioSection from "../fragments/portfolioSection";
+import ContactSection from "../fragments/contactSection";
 
-export default function Layouts() {
+export default function HomeLayouts() {
   return (
     <>
       <Navbar />
-      <Main />
-      <About />
-      <Skills />
-      <Experience />
-      <Portfolio />
-      <Contact />
+      <MainSection />
+      <AboutSection />
+      <SkillsSection />
+      <ExperienceSection />
+      <PortfolioSection />
+      <ContactSection />
     </>
   );
 }
